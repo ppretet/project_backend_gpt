@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS `order` (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    order_id VARCHAR(255) NOT NULL UNIQUE,
+    goods_id VARCHAR(255) NOT NULL,
+    status ENUM('cancel','pending','success') DEFAULT 'pending' NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    finish_at TIMESTAMP DEFAULT NULL,
+    user_id INTEGER NOT NULL,
+    pay_link TEXT DEFAULT NULL,
+    FOREIGN KEY (user_id) REFERENCES user(id) ON DELETE CASCADE,
+    FOREIGN KEY (goods_id) REFERENCES goods(goods_id) ON DELETE CASCADE
+);

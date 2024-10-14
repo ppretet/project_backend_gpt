@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS ask_detail (
+  id INTEGER PRIMARY KEY AUTO_INCREMENT,
+  model VARCHAR(20) NOT NULL,
+  question TEXT NOT NULL,
+  ask TEXT NOT NULL,
+  created_at Timestamp NOT NULL,
+    user_id INTEGER,
+    session_id INTEGER NOT NULL,
+    FOREIGN KEY(user_id) REFERENCES user(id),
+    FOREIGN KEY(session_id) REFERENCES conversation(id)
+);

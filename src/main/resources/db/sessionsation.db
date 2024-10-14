@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS sessionStation (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    role ENUM('assistant', 'user') NOT NULL,
+    content TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    session_id INTEGER NOT NULL,
+    img_url TEXT,
+    FOREIGN KEY (session_id) REFERENCES conversation(id) ON DELETE CASCADE
+);

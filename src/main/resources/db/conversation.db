@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS conversation(
+        id INTEGER PRIMARY KEY AUTO_INCREMENT,
+        session_id VARCHAR(255) NOT NULL,
+        is_deleted BOOLEAN DEFAULT 0 NOT NULL,
+        create_at Timestamp DEFAULT CURRENT_TIMESTAMP NOT NULL,
+        title VARCHAR(20) NOT NULL,
+        user_id INTEGER NOT NULL,
+        username VARCHAR(255) NOT NULL,
+
+        FOREIGN KEY (user_id) REFERENCES user(id) ON DELETE CASCADE,
+
+        FOREIGN KEY (username) REFERENCES user(username) ON DELETE CASCADE
+    );
+CREATE INDEX idx_session_id ON conversation(session_id);
