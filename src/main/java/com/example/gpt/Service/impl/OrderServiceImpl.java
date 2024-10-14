@@ -40,12 +40,12 @@ public class OrderServiceImpl implements OrderService {
     private OrderMapper orderMapper;
     @Autowired
     private RabbitTemplate rabbitTemplate;
-    private static final String private_key = "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC697WWSgOEkaBOO90r51tgar9XOcJmtBhGxSbcaNGieYH8t70uBqPxZo2S48L+ReFF+Y/MYjOEHNFniB7/0I/Dh9fqZRbOdG4s3oYJGg2RwwHiIUUkgDyJ//h9OfRTSA1Mwm2Rb7RI7t4EnRLCNIdzINvU/ctMZmf5E9YK7WN4LWbZdaeuH1zPCts4TNXNRous5wLsst9jkTJBel0ZB1YodxwVOZhSHIh9IHyqKf6TzIG5kz2anF2qzAQ3fgdGq6kXMJD+afYacIh5OfYBRPUrfqsA+PpSS9isNhnDgZ0JtFwZ0JGGhNz1JkAvZPgGHqmHglebdPC+DndRe9irOlW7AgMBAAECggEANk6VNB4zf2I9Sfwhdgsxg4P+J/vi96oAEy5Y51Sa77KTizBjhubu38OGA9CcZvctRAIFPryXchxcxtHHD08pMwZWNQM/6J/xEJ9iF2q13kziUyiOyNdmvj7Xkqguy7H2CwG+iawEldqsKnLla/uODGbS8770OjDUqoiUd4AUkGdAbAyF0Wc6HTKUcno21fKw3lJ2I4JPeBKRooZIommTBDK/rMA2V8AqT+0f3lm3l9II7lr4MvY3RJd7niAyC3juJHm63eKYpQoEWVJ83pyXNzJezhhy5OKqRweWjHekgRunxNFvytxAUFB0oF/sS0dt0U6JDNYqVyVIz+RYd3uEQQKBgQDkuXhfKXdEo8hXExkNXUjiBEnxAsg4lkemfITHuYBcAzIJwDX8e/7KEbskKbUVkJJafy/adTXyT8gGp1WWaqQ/hzdXsVekiCIxlTtrj5l9/tgzXH1fXmZoEc0vahmkFjZ9wZNXERDAE/r4r1dEj8oGZAg0ouW+qlpcoIcr5J4V+QKBgQDRQ3rdSICQLM98K3XSp+o0pUmTzABzjyESIQ2/bgWIS9DF8/kvY/znCCfdACO18UrRo3JqOISRMBsQlYouG2kh1nGe+YL7BhYNr/4G9ahf8FPCyOkdOJGWjt+B4gKq4z59Invjho8gvrs3WegyzPDWO1s6U1GBnnCz0tRk9vhmUwKBgFxGl1GNIRkIGqNGiSzjHaxRnqMlRDHQL0fzpH4PUMHOaDmW2jDqtXhAfwev6+avVNw9w8iW0RTZKxHEILt2ep1GqAUw/vLaGTF3y2kxnfM/BWpzPgFjzFzgEa+3VnDkpUdG+XJ+6AsWBIKf+s0mVZMOeGED9zxc7efAu8fxi/XBAoGBAKELkY6isW5DThp9R9uqpi+F1K4NnXtRd14AWhgsj81oq27sZ6T1CjiyqhsGdHUdETts0iy0+jDSGMIWk5UQO0RzSFXUJ90PvgEipBivDblnts582ApI8qIvqgrG6M6ivACJfVaIw7Wrk2DxrCUMW3xDid3FKUDbslhxtEtPVbNJAoGAQcxPglnNH9Ste+RI1nLh/4LC/Mm+rBUkD6L2eNb7lh1BvDfto00GdBm4iUVwa+gQFsYDo+fv9O+pUMkk98n9tRlchETXjhkTz6j8h1xvOrEj/hjsBj9QXUnCIhgMH9j72pNaH1bHb9xYCNkbAJkvaxMcHupFWKohuK5GdjSzTm0=";
-    private static final String public_key= "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAheKWt6TgBk5sdecvCkDBnZNNgklCmEpfi0TRo3gwM8dTSE7qecoQYyM2CfIPtpWsL5IQ6mgnYoki2Logv9L/rlqAOZqGxk7Cx6EtQcPS19Wv9OoH0PQlwF2/Fp8RsqsHcLIhRZZaHKpe6LwwD2j5C0Hyr0vTkZ39LEde2sv4LVqHk/CggM6KRkZodUa6Vgcb8P68hBWH/Ebi8xmlIow+qyR4v6w/Drd4pdyw7lbX8v3H29UlmPFOwHlOUQ69EA+cpx5710A3ksXH5imJRh7Uw26okGzxFFGvQv33TQzieJ2iMGvO6CwPy8zMht/GB7OrgSvIgtGAhIF9vV/M8SSLxQIDAQAB";
-    private static final String notifyUrl = "http://w4afqr.natappfree.cc/api/finish";
-    private static final String getNotifyUrl="http://w4afqr.natappfree.cc/api/getfinish";
-    private static final String app_id = "9021000124688810";
-    private static final String serverUrl = "https://openapi-sandbox.dl.alipaydev.com/gateway.do";
+    private static final String private_key = "your private_key";
+    private static final String public_key= "public_key";
+    private static final String notifyUrl = "notifyUrl";
+    private static final String getNotifyUrl="getNotifyUrl";
+    private static final String app_id = "your app_id";
+    private static final String serverUrl = "serverUrl";
     @Override
     public Integer findByOrderId(String order_id) {
         return orderMapper.findByOrderId(order_id);

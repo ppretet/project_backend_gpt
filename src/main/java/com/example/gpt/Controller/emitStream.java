@@ -41,7 +41,7 @@ import org.slf4j.LoggerFactory;
 @RequestMapping("/emit")
 public class emitStream {
     private final OkHttpClient client = new OkHttpClient();
-    private final String key ="sk-TJPzGtvBJP4j4Q5ZXCOC49ZK4MjQNWXk0qJ7MN46v2l03BC2";
+    private final String key ="your key";
     private final ExecutorService executor = Executors.newFixedThreadPool(10);
     @Autowired
     private emitService emitService;

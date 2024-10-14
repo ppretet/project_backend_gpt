@@ -35,7 +35,7 @@ import static com.alipay.api.AlipayConstants.CHARSET_UTF8;
 @CrossOrigin("*")
 @RequestMapping("/api")
 public class AirPayController {
-    private static final String public_key= "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAheKWt6TgBk5sdecvCkDBnZNNgklCmEpfi0TRo3gwM8dTSE7qecoQYyM2CfIPtpWsL5IQ6mgnYoki2Logv9L/rlqAOZqGxk7Cx6EtQcPS19Wv9OoH0PQlwF2/Fp8RsqsHcLIhRZZaHKpe6LwwD2j5C0Hyr0vTkZ39LEde2sv4LVqHk/CggM6KRkZodUa6Vgcb8P68hBWH/Ebi8xmlIow+qyR4v6w/Drd4pdyw7lbX8v3H29UlmPFOwHlOUQ69EA+cpx5710A3ksXH5imJRh7Uw26okGzxFFGvQv33TQzieJ2iMGvO6CwPy8zMht/GB7OrgSvIgtGAhIF9vV/M8SSLxQIDAQAB";
+    private static final String public_key= "public key";
 
     private final ReentrantLock lock = new ReentrantLock();
     private generateGwt jwt = new generateGwt();
